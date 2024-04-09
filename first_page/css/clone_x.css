@@ -24,7 +24,7 @@ body, html {
 }
 
 .id_content {
-    background-color: black; 
+    background-color: white; 
     padding: 20px;
     min-width: 600px;
 }
@@ -35,3 +35,71 @@ footer {
     padding: 10px;
     height: 3vh; 
 }
+
+#form{
+    width: 400px;
+    position: relative;
+}
+
+#topDiv{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+.btn1{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 1ch;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn2{
+    width: 300px;
+    padding: 10px;
+    border-radius: 1ch;
+    border: 1px solid gray;
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+}
+
+.btn3{
+    width: 300px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 1ch;
+    text-align: center; font-weight: bold;
+    color: #0077ff;
+    padding: 10px;
+}
+
+
+
+
+.hr-sect{ display: flex; 
+    flex-basis: 100%; 
+    align-items: center;
+}
+.hr-sect::before, .hr-sect::after {
+    content: ""; 
+    flex-grow: 1; 
+    background: rgba(0, 0, 0, 0.35); 
+    height: 1px; 
+    font-size: 0px; line-height: 0px; 
+    margin: 0px 8px;}
+
+
+span{
+    color: skyblue;
+}
+
+.h1, .h2{
+    margin:10px;
+}
+
+.bottomDiv{
+    position: fixed;
+}
+
