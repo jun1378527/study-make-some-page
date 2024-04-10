@@ -8,7 +8,7 @@ body, html {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    height: 97vh; 
+    height: calc(100vh - 50px);; 
 }
 .img_content {
     display: flex;
@@ -29,11 +29,11 @@ body, html {
     min-width: 600px;
 }
 footer {
-    background-color: rebeccapurple; 
-    color: black;
+    background-color: rgb(255, 255, 255); 
+    color: #536471;
+    font-size: 13px;
     text-align: center;
-    padding: 10px;
-    height: 3vh; 
+    height: 50px;
 }
 
 #form{
@@ -47,20 +47,29 @@ footer {
 }
 
 
+.btn0{
+    background-color: white;
+    border: 1px solid rgb(207, 217, 222);
+    border-radius: 9999px;
+    padding: 10px;
+    margin: 4px;
+    width: 300px;
+}
 .btn1{
     background-color: white;
-    border: 1px solid gray;
-    border-radius: 1ch;
+    border: 1px solid rgb(207, 217, 222);
+    border-radius: 9999px;
     padding: 10px;
-    margin: 10px;
+    margin: 4px;
+    width: 300px;
 }
 
 .btn2{
     width: 300px;
     padding: 10px;
-    border-radius: 1ch;
-    border: 1px solid gray;
-    background-color: skyblue;
+    border-radius: 9999px;
+    border: 1px solid rgb(207, 217, 222);
+    background-color: rgb(74, 153, 233, 1);
     text-align: center;
     color: white;
 }
@@ -68,8 +77,8 @@ footer {
 .btn3{
     width: 300px;
     background-color: white;
-    border: 1px solid gray;
-    border-radius: 1ch;
+    border: 1px solid rgb(207, 217, 222);
+    border-radius: 9999px;
     text-align: center; font-weight: bold;
     color: #0077ff;
     padding: 10px;
@@ -85,21 +94,34 @@ footer {
 .hr-sect::before, .hr-sect::after {
     content: ""; 
     flex-grow: 1; 
-    background: rgba(0, 0, 0, 0.35); 
+    background: rgba(136, 136, 136, 0.35); 
     height: 1px; 
     font-size: 0px; line-height: 0px; 
     margin: 0px 8px;}
 
 
-span{
-    color: skyblue;
-}
 
-.h1, .h2{
+
+.span1, .span2{
     margin:10px;
 }
-
-.bottomDiv{
-    position: fixed;
+.span1{
+    font-size: 65px;
+    font-weight: bold;
 }
-
+.span2{
+    font-size: 31px;
+    color: #0f1419;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: rgb(74, 153, 233, 1);
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    text-decoration: none;
+    color: rgb(74, 153, 233, 1);
+}
