@@ -15,13 +15,13 @@ body, html {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: auto;
 }
 
 .img_content, .id_content {
     padding: 20px;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
 }
 .img_content img {
@@ -129,6 +129,23 @@ a:visited{
     color: rgb(74, 153, 233, 1);
 }
 
-@media screen {
-    
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+    }
+    .img_content img {
+        width: 100px; 
+        height: 100px; 
+    }
+    .img_content, .id_content {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #form {
+        width: 300px; 
+        padding: 20px;
+    }
 }
