@@ -6,6 +6,8 @@ body, html {
 }
 
 .container {
+    max-width: 1400px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -40,7 +42,7 @@ footer {
 }
 
 #form{
-    width: 400px;
+    width: 300px;
     position: relative;
 }
 
@@ -48,40 +50,42 @@ footer {
     display: grid;
     grid-template-columns: auto;
 }
-
+.btn0, .btn1, .btn2, .btn3{
+    width: 300px;
+    border-radius: 9999px;
+    margin: 4px;
+    font-size: 15px;
+}
 
 .btn0{
     background-color: white;
     border: 1px solid rgb(207, 217, 222);
-    border-radius: 9999px;
+
     padding: 10px;
-    margin: 4px;
-    width: 300px;
+
+
 }
 .btn1{
     background-color: white;
     border: 1px solid rgb(207, 217, 222);
-    border-radius: 9999px;
     padding: 10px;
-    margin: 4px;
-    width: 300px;
+    font-weight: bolder;
+
 }
 
 .btn2{
-    width: 300px;
     padding: 10px;
-    border-radius: 9999px;
     border: 1px solid rgb(207, 217, 222);
     background-color: rgb(74, 153, 233, 1);
     text-align: center;
     color: white;
+    font-weight: bolder;
 }
 
 .btn3{
-    width: 300px;
+
     background-color: white;
     border: 1px solid rgb(207, 217, 222);
-    border-radius: 9999px;
     text-align: center; font-weight: bold;
     color: #0077ff;
     padding: 10px;
@@ -102,7 +106,9 @@ footer {
     font-size: 0px; line-height: 0px; 
     margin: 0px 8px;}
 
-
+.font_small{
+    font-size: 10px;
+}
 
 
 .span1, .span2{
