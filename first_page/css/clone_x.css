@@ -8,7 +8,8 @@ body, html {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    height: calc(100vh - 50px);; 
+    overflow-y: auto;
+    height: calc(100vh - 50px);
 }
 .img_content {
     display: flex;
@@ -16,6 +17,8 @@ body, html {
     align-items: center;
     background-color: white; 
     padding: 20px;
+    max-height: calc(100vh - 50px);
+
 }
 .img_content img {
     max-width: 100%;
@@ -27,7 +30,12 @@ body, html {
     background-color: white; 
     padding: 20px;
     min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: calc(100vh - 50px);
 }
+
 footer {
     background-color: rgb(255, 255, 255); 
     color: #536471;
